@@ -9,19 +9,21 @@ let importButton = document.querySelector('#import');
 
 importButton.addEventListener('click', function () {
 
-    let ageDom = document.getElementById('age');
-    let age = ageDom.value;
-    console.log(age)
+   
 
     let distanceDom = document.getElementById('distance');
     let distance = distanceDom.value;
     console.log(distance)
 
-    if (age < 18) {
+    let ageDom = document.getElementById('selection');
+    let age = ageDom.value;
+    console.log(age)
+
+    if (age == 'underage') {
         const underagePrice = kmPrice * distance * underageDiscont;
         console.log(underagePrice)
 
-    } else if (age > 65) {
+    } else if (age == 'retired') {
         const retiredPrice = kmPrice * distance * retiredDiscont;
         console.log(retiredPrice)
 
