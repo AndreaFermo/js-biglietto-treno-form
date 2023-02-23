@@ -9,19 +9,22 @@
    
 </head>
 <body>
+    <header>
+        <h1>CALCOLA IL TUO BIGLIETTO</h1>
+    </header>
 
     <main>
-        <form>
-            <div>
-                <div>Nome Cognome</div>
+        <form class="d-flex justify-content-center">
+            <div class="padding2rem">
+                <div class="color-red">Nome Cognome</div>
                 <input type="text" id="customer">
             </div>
-            <div>
-                <div>Km da percorrere</div>
+            <div class="padding2rem">
+                <div class="color-red">Km da percorrere</div>
                 <input type="text" id="distance">
             </div>
-            <div>
-                <div>Fascia d'età</div>
+            <div class="padding2rem">
+                <div class="color-red">Fascia d'età</div>
                 <select id="selection">
                     <option value="adult">Maggiorenne</option>
                     <option value="underage">Under 18</option>
@@ -30,30 +33,32 @@
                 </select>
             </div>
         </form>
-
-        <button id="import">Genera</button>
-        <button id="reset">Reset</button>
-
+        <div class="d-flex justify-content-center padding2rem">
+            <button id="import" class="color-red my-2rem fSize2">Genera</button>
+            <button id="reset" class="color-red my-2rem fSize2">Annulla</button>
+        </div>
         <section id="ticket" class="d-none">
-            <div>
-                <div>NOME PASSEGGERO</div>
-                <div id="customerName"></div>
-            </div>
-            <div>
-                <div>Offerta</div>
-                <div id="offer"></div>
-            </div>
-            <div>
-                <div>Carrozza</div>
-                <div id="carriage"></div>
-            </div>
-            <div>
-                <div>Codice CP</div>
-                <div id="cpCode"></div>
-            </div>
-            <div>
-                <div>Costo biglietto</div>
-                <div id="finalPrice"></div>
+            <div class="container d-flex justify-content-center">
+                <div class="padding1rem">
+                    <div class="padding1rem text-bold">NOME PASSEGGERO</div>
+                    <div id="customerName" class="padding1rem"></div>
+                </div>
+                <div class="padding1rem">
+                    <div class="padding1rem text-bold">Offerta</div>
+                    <div id="offer" class="padding1rem"></div>
+                </div>
+                <div class="padding1rem">
+                    <div class="padding1rem text-bold">Carrozza</div>
+                    <div id="carriage" class="padding1rem"></div>
+                </div>
+                <div class="padding1rem">
+                    <div class="padding1rem text-bold">Codice CP</div>
+                    <div id="cpCode" class="padding1rem"></div>
+                </div>
+                <div class="padding1rem">
+                    <div class="padding1rem text-bold">Costo biglietto</div>
+                    <div id="finalPrice" class="padding1rem"></div>
+                </div>
             </div>
         </section>
 

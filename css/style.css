@@ -7,3 +7,60 @@
 .d-none {
     display: none;
 }
+
+.d-flex {
+    display: flex;
+}
+
+.fSize2 {
+    font-size: 2rem;
+}
+
+.my-2rem {
+    margin: 0 2rem;
+}
+
+.padding1rem {
+    padding: 1rem;
+}
+
+.padding2rem {
+    padding: 2rem;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.color-red {
+    color: red;
+}
+
+header {
+    background-color: #ff2886;
+    height: 70px;
+}
+
+main {
+    height: calc(100vh - 70px);
+    background-color: khaki;
+}
+
+header h1 {
+    line-height: 70px;
+    color: white;
+    text-align: center;
+
+}
+
+.container {
+    max-width: 900px;
+    background-color: white;
+    margin: auto;
+    border: 3px solid gray;
+    border-radius: 1rem;
+}
+
+.text-bold {
+    font-weight: bold;
+}
