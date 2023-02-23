@@ -48,6 +48,8 @@ domReset.addEventListener('click', function() {
         let distanceDom = document.getElementById('distance');
         distanceDom.value = "";
 
+        let ageDom = document.getElementById('selection');
+        ageDom.value = 'adult'
         
 
 
