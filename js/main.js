@@ -29,6 +29,9 @@ importButton.addEventListener('click', function () {
     const randomCp = Math.floor((Math.random() * 10000) + 90000);
     document.getElementById('cpCode').innerHTML = `${randomCp}`;
 
+    const domTicket = document.getElementById('ticket');
+    domTicket.classList.remove('d-none');
+
 
     if (age == 'underage') {
         const underagePrice = kmPrice * distance * underageDiscont;
@@ -57,16 +60,17 @@ const domReset = document.querySelector('#reset');
 
 domReset.addEventListener('click', function() {
 
-        let customerDom = document.getElementById('customer');
-        customerDom.value = '';
+    let customerDom = document.getElementById('customer');
+    customerDom.value = '';
 
-        let distanceDom = document.getElementById('distance');
-        distanceDom.value = '';
+    let distanceDom = document.getElementById('distance');
+    distanceDom.value = '';
 
-        let ageDom = document.getElementById('selection');
-        ageDom.value = 'adult'
+    let ageDom = document.getElementById('selection');
+    ageDom.value = 'adult'
         
-
+    const domTicket = document.getElementById('ticket');
+    domTicket.classList.add('d-none');
 
     }
 );
