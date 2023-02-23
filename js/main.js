@@ -9,7 +9,9 @@ let importButton = document.querySelector('#import');
 
 importButton.addEventListener('click', function () {
 
-   
+    let customerDom = document.getElementById('customer');
+    let customer = customerDom.value;
+    console.log(customer)
 
     let distanceDom = document.getElementById('distance');
     let distance = distanceDom.value;
@@ -34,6 +36,20 @@ importButton.addEventListener('click', function () {
 
 }
 
-)
+);
  
+const domReset = document.querySelector('#reset');
 
+domReset.addEventListener('click', function() {
+
+        let customerDom = document.getElementById('customer');
+        customerDom.value = "";
+
+        let distanceDom = document.getElementById('distance');
+        distanceDom.value = "";
+
+        
+
+
+    }
+);
